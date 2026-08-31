@@ -1,4 +1,4 @@
-import SplashCursor from "../components/SplashCursor";
+import SplashCursor from "./SplashCursor";
 
 export default function Home() {
   return (
