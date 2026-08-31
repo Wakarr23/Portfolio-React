@@ -5,6 +5,8 @@ import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 
 export default defineConfig({
+  base: '/Portfolio-React/',
+
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] }),
