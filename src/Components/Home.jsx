@@ -1,42 +1,36 @@
-import { useEffect, useState } from "react";
+import SplashCursor from "../components/SplashCursor";
 
 export default function Home() {
-    const [mousePosition, setMousePosition] = useState({x:0, y:0 })
-    useEffect(() => {
-        function handleMouseMove(e) {
-            setMousePosition({x: e.clientX, y: e.clientY})
-        }
+  return (
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center bg-slate-950 px-4"
+    >
+      <SplashCursor
+  SIM_RESOLUTION={128}
+  DYE_RESOLUTION={1440}
+  DENSITY_DISSIPATION={5}
+  VELOCITY_DISSIPATION={3}
+  PRESSURE={0.1}
+  CURL={2}
+  SPLAT_RADIUS={0.1}
+  SPLAT_FORCE={6000}
+  COLOR_UPDATE_SPEED={1}
+/>
 
-        window.addEventListener("mousemove", handleMouseMove)
-        return() =>window.removeEventListener("mousemove", handleMouseMove)
-    },[])
+      <div className="relative z-10">
+        <p className="text-red-400 text-sm sm:text-base mb-2">
+          Hello, I'm
+        </p>
 
-    return (
-    <section id="home"className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute inset-0 opacity-30" style={{
-            background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.15), transparent 40%)`,
-        }}/>
-        <div>
-            <div>
-                <div>
-                    {/*ID Header */}
-<div>
-  <p className="text-red-400 text-sm sm:text-base mb-2">
-    Hello, I'm
-  </p>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">
+          Deewakar Paudel
+        </h1>
 
-  <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">
-    Deewakar Paudel
-  </h1>
-
-  <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-300 mt-3">
-    Web Developer & Designer
-  </h2>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
+        <h2 className="mt-3 text-xl sm:text-2xl md:text-3xl text-gray-300">
+          Web Developer & Designer
+        </h2>
+      </div>
     </section>
-    );  }
+  );
+}
