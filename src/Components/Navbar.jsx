@@ -7,12 +7,14 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-14 sm:h-16 md:h-20">
                 <div className="flex items-center space-x-1 group cursor-pointer">
-                    <div>
+                           {/* Logo Here
+                            <div>
                         <img src={`${import.meta.env.BASE_URL}me.png`}
   alt="me"
   className="w-6 h-6 sm:w-8 sm:h-8"
-/>
-                    </div>
+    </div>
+/>*/}
+                  
                          <span className="text-lg sm:text-xl md:text-2xl font-medium ">
                             <span className="text-white">Waka</span>
                             <span className="text-red-400">rr</span>

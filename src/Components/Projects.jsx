@@ -6,39 +6,33 @@ export default function Projects() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   const projects = [
-    {
-      number: "01",
-      category: "Translation & Content Review",
-      title: "Translation & Content Review",
-      description:
-        "Japanese-to-Nepali translation and proofreading for e-learning videos, including subtitle correction, grammar, natural expressions, and accurate terminology.",
-      image: "https://crowdworks.jp/attachments/25593172.png?width=100&height=100",
-      technologies: ["Time Coding", "Translate", "Correction"],
-      link: "https://www.nk-create.co.jp/",
-    },
-    {
-      number: "02",
-      category: "Menu and Flyer Creation",
-      title: "Menu Board and Flyer Creation",
-      description:
-        "Build a attractive design of menu and Board and Flyer for this Restaurant.",
-      image: "https://lh3.googleusercontent.com/geougc/AF1QipNJ8aqXikxUVaEJhhf8BQ4s2ym7VB7NNYpLJQ-u=h400-no",
-      technologies: ["Canva"],
-      link: "https://www.google.com/maps/place/Majheri/@35.7107858,139.6188824,17z/data=!3m1!4b1!4m6!3m5!1s0x6018ed00766d5559:0xf338577a39169310!8m2!3d35.7107858!4d139.6214573!16s%2Fg%2F11x5__n2ql?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D",
-    },
-    {
-      number: "03",
-      category: "Portfolio Website",
-      title: "My Own Portfolio",
-      description:
-        "A responsive Portfolio website designed to showcase React Developments.",
-      image: "/projects/travel.png",
-      technologies: ["React", "Tailwindcss", "JavaScript"],
-      link: "#",
-    },
+  {
+    number: "01",
+    category: "Translation & Content Review",
+    title: "Japanese–Nepali Translation",
+    description:
+      "Japanese-to-Nepali translation and proofreading for e-learning videos, including subtitle correction, grammar, natural expressions, and accurate terminology.",
+    image: "https://crowdworks.jp/attachments/25593172.png?width=100&height=100",
+    technologies: ["Translation", "Proofreading", "Time Coding"],
+    link: "https://www.nk-create.co.jp/",
+  },
+
+  {
+    number: "02",
+    category: "Restaurant Design",
+    title: "Restaurant Menu & Flyer Design",
+    description:
+      "Designed professional restaurant menus, menu boards, and promotional flyers with a clean and visually appealing layout.",
+    image: "https://lh3.googleusercontent.com/geougc/AF1QipNJ8aqXikxUVaEJhhf8BQ4s2ym7VB7NNYpLJQ-u=h400-no",
+    technologies: ["Canva", "Menu Design", "Flyer Design"],
+    link: "YOUR_RESTAURANT_LINK",
+  },
+
+
+];
     
 
-  ];
+
 
   useEffect(() => {
     function handleMouseMove(e) {

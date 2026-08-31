@@ -120,56 +120,73 @@ export default function Contacts() {
           </div>
 
           {/* Right Side - Form */}
-          <div className="bg-slate-900/60 backdrop-blur-lg border border-slate-800 rounded-2xl p-6 sm:p-8">
 
-            <form className="space-y-5">
 
-              <div>
-                <label className="block text-gray-300 text-sm mb-2">
-                  Name
-                </label>
+<div className="bg-slate-900/60 backdrop-blur-lg border border-slate-800 rounded-2xl p-6 sm:p-8">
 
-                <input
-                  type="text"
-                  placeholder="Your name"
-                  className="w-full px-4 py-3 bg-slate-950/70 border border-slate-700 rounded-lg text-white placeholder-gray-500 outline-none focus:border-red-400 transition"
-                />
-              </div>
+  <form
+    action="https://formspree.io/f/mljegnkr"
+    method="POST"
+    className="space-y-5"
+  >
 
-              <div>
-                <label className="block text-gray-300 text-sm mb-2">
-                  Email
-                </label>
+    <div>
+      <label className="block text-gray-300 text-sm mb-2">
+        Name
+      </label>
 
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="w-full px-4 py-3 bg-slate-950/70 border border-slate-700 rounded-lg text-white placeholder-gray-500 outline-none focus:border-red-400 transition"
-                />
-              </div>
+      <input
+        type="text"
+        name="name"
+        placeholder="Your name"
+        required
+        className="w-full px-4 py-3 bg-slate-950/70 border border-slate-700 rounded-lg text-white placeholder-gray-500 outline-none focus:border-red-400 transition"
+      />
+    </div>
 
-              <div>
-                <label className="block text-gray-300 text-sm mb-2">
-                  Message
-                </label>
+    <div>
+      <label className="block text-gray-300 text-sm mb-2">
+        Email
+      </label>
 
-                <textarea
-                  rows="5"
-                  placeholder="Your message"
-                  className="w-full px-4 py-3 bg-slate-950/70 border border-slate-700 rounded-lg text-white placeholder-gray-500 outline-none focus:border-red-400 transition resize-none"
-                ></textarea>
-              </div>
+      <input
+        type="email"
+        name="email"
+        placeholder="Your email"
+        required
+        className="w-full px-4 py-3 bg-slate-950/70 border border-slate-700 rounded-lg text-white placeholder-gray-500 outline-none focus:border-red-400 transition"
+      />
+    </div>
 
-              <button
-                type="submit"
-                className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-medium rounded-lg transition duration-300"
-              >
-                Send Message
-                <Send className="w-4 h-4" />
-              </button>
+    <div>
+      <label className="block text-gray-300 text-sm mb-2">
+        Message
+      </label>
 
-            </form>
-          </div>
+      <textarea
+        name="message"
+        rows="5"
+        placeholder="Your message"
+        required
+        className="w-full px-4 py-3 bg-slate-950/70 border border-slate-700 rounded-lg text-white placeholder-gray-500 outline-none focus:border-red-400 transition resize-none"
+      ></textarea>
+    </div>
+
+    <button
+      type="submit"
+      className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-medium rounded-lg transition duration-300"
+    >
+      Send Message
+      <Send className="w-4 h-4" />
+    </button>
+
+  </form>
+
+</div>
+
+
+
+
 
         </div>
       </div>

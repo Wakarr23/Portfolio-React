@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+
 export default function Aboutme() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -33,6 +34,10 @@ export default function Aboutme() {
         }}
       />
 
+
+
+      
+
       {/* About Me Content */}
       <div className="relative z-10 max-w-5xl w-full mx-auto">
 
@@ -48,6 +53,7 @@ export default function Aboutme() {
         </div>
 
         {/* Content */}
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
 <img
                 src={`${import.meta.env.BASE_URL}me.png`}
@@ -57,15 +63,12 @@ export default function Aboutme() {
           {/* Left side */}
           <div>
             <h3 className="text-2xl sm:text-3xl font-bold text-white mb-5">
-              I'm Deewakar Paudel, a graduate of Waseda Bunri Gakko with a
-              strong interest in web development and digital design.
+              Hi, I’m Deewakar Paudel, a Front-End Developer based in Japan.
             </h3>
 
             <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-              I work with HTML, CSS, JavaScript, React, Bootstrap, and GitHub
-              to create responsive and user-friendly websites. I also design
-              restaurant menus, flyers, posters, and promotional materials,
-              combining functionality with clean visual design.
+              Front-End Developer passionate about building modern, responsive, and interactive web experiences, with experience creating restaurant menus, flyers, and promotional posters.
+
             </p>
 
             {/* Button */}
