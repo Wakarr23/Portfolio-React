@@ -50,7 +50,7 @@ export default function Aboutme() {
         {/* Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
 <img
-                src="/me.png"
+                src={`${import.meta.env.BASE_URL}me.png`}
                 alt="Deewakar Paudel"
                 className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 object-cover rounded-2xl border border-white/10"
               />

@@ -8,7 +8,10 @@ export default function Navbar() {
             <div className="flex justify-between items-center h-14 sm:h-16 md:h-20">
                 <div className="flex items-center space-x-1 group cursor-pointer">
                     <div>
-                        <img src="/me.png" alt="me" className="w-6 h-6 sm:w-8 sm:h-8"></img>
+                        <img src={`${import.meta.env.BASE_URL}me.png`}
+  alt="me"
+  className="w-6 h-6 sm:w-8 sm:h-8"
+/>
                     </div>
                          <span className="text-lg sm:text-xl md:text-2xl font-medium ">
                             <span className="text-white">Waka</span>
@@ -27,7 +30,7 @@ export default function Navbar() {
 
                             <a href="#projects" className="text-gray-300 hover:text-red-400 text-sm lg:text-base">Projects</a>
                     
-                            <a href="#contact" className="text-gray-300 hover:text-red-400 text-sm lg:text-base">Contact</a>
+                            <a href="#contact" className="text-gray-300 hover:text-red-00 text-sm lg:text-base">Contact</a>
                     </div>
 
 
